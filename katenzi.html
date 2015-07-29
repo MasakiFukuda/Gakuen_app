@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-content-equiv='Content-ScriptType' content='text/javascript'>
+		<title>科展示紹介</title>
+		<script>
+			function load(){
+				var xmlHttp = new XMLHttpRequest();
+				var parameter = window.location.search.substring(1).split("=");
+				var paramValue = parameter[1];
+				
+				var host = location.host;
+				var path = location.pathname.split("/");
+				
+				var url = "http://" + host + "/" + path[1] + "/katenzi/katenzi"+paramValue+".txt";
+				
+				console.log(url);
+				
+				xmlHttp.open("GET",url,false);
+				xmlHttp.send(null);
+				document.getElementById("word").innerHTML = xmlHttp.responseText;
+			}
+			
+		</script>
+	</head>
+	<body onload="load()">
+		<style type="text/css">
+			#word{
+				width: auto;
+				text-align: center;
+				font-size: 30px;
+			}
+		</style>
+		
+		<p id="word"></p>
+	</body>
+</html>
