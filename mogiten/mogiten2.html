@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-content-equiv='Content-ScriptType' content='text/javascript'>
+		<meta name="viewport" content="width=device-width,initial-scale=1">		
 		<title>模擬店</title>
 		
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
@@ -22,9 +23,11 @@
 			}
 		</style>
 		
-		<div data-role="page">
+		<div data-role="page" data-add-back-btn="true">
 			<div data-role="header">
-				
+				<img src="../img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
+                <ul id="hanList"></ul>
 			</div>
 			<div data-role="content">
 				<p id="word">建築科模擬店<br>
