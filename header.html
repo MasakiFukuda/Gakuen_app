@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-content-equiv='Content-ScriptType' content='text/javascript'>
+		
+		<script src="jquery-2.1.4.min.js"></script>
 		<script>
 			var flag = false;
 			function push(){
@@ -15,6 +17,11 @@
 				}
 				
 			}
+			
+			$(document).ready(function() {
+				$("#parent-iframe", window.parent.document).height(document.body.scrollHeight);
+			});
+			
 		</script>
 	</head>
 	<body>

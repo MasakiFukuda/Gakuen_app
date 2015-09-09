@@ -2,23 +2,43 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>校内マップ</title>
-        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     </head>
     <body>
        
-       <iframe src="header.html" width="auto" height="250px" frameborder="0"></iframe>
-       <div id="map">
-           <h1>MAP実装予定ページ</h1>
-           <img src="img/map_test.png">
+
+       <div data-role="page" data-add-back-btn="true">
+           <div data-role="header">
+               <img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
+                <ul id="hanList"></ul>
+           </div>
+           <div data-role="content">
+               <div id="map">
+                    <h1>MAP実装予定ページ</h1>
+                    <img src="img/map_test.png">
+                </div>
+           </div>
+           <div data-role="footer">
+               
+           </div>
        </div>
        
-       <iframe src="footer.html" frameborder="0" width="1000px"></iframe>
+
        
        <style type="text/css">
            #map{
                text-align: center;
+               width: auto;
            }
+           #hanb{
+                float: right;
+            }
        </style>
         
     </body>

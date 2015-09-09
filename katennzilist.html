@@ -1,7 +1,26 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>科展示紹介</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+        
+        <script>
+			var flag = false;
+			function push(){
+				if(flag){
+					flag = false;
+					document.getElementById("hanList").innerHTML = '';
+				}else{
+					flag = true;
+					document.getElementById("hanList").innerHTML = '<li><a href="index.html" target="_top">TOP</a></li><li><a href="katennzilist.html" target="_top">科展示一覧</a></li><li><a href="mogitenlist.html" target="_top">模擬店一覧</a></li><li><a href="map.html" target="_top">MAP</a></li><li><a href="schedule.html" target="_top">イベントスケジュール</a></li>';
+				}
+				
+			}
+		</script>
+        
     </head>
     <body>
         <style type="text/css">
@@ -12,15 +31,34 @@
                 text-align: center;
                 list-style: none;
             }
+            #hanb{
+                float: right;
+            }
+            #title1{
+                font-size: large;
+            }
         </style>
-        <iframe src="header.html" width="auto" height="250px" frameborder="0"></iframe>
-        <ul id="list1">
-            <h1>科展示のリスト</h1>
-            <li><a href="katenzi.html?no=1">情報処理科</a></li>
-            <li><a href="katenzi.html?no=2">WEBデザイナー科</a></li>
-            <li><a href="katenzi.html?no=3">建築監督科</a></li>
-        </ul>
         
-        <iframe src="footer.html" frameborder="0" width="1000px"></iframe>
+        <div data-role="page" data-add-back-btn="true">
+            <div data-role="header">
+                <img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
+                <ul id="hanList"></ul>
+            </div>
+            <div data-role="content">
+                 <ul id="list1">
+                 <h1 id="title1">科展示のリスト</h1>
+                 <li><a href="katenzi/katenzi1.html">情報処理科</a></li>
+                 <li><a href="katenzi/katenzi2.html">WEBデザイナー科</a></li>
+                 <li><a href="katenzi/katenzi3.html">建築監督科</a></li>
+              </ul>
+            </div>
+            <div data-role="footer">
+                
+            </div>
+        </div>
+                
+        
+
     </body>
 </html>

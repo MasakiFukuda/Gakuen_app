@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta http-content-equiv='Content-ScriptType' content='text/javascript'>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+		<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+		
+		<title>科展示紹介</title>
+		<script>
+			
+			var flag = false;
+			function push(){
+				if(flag){
+					flag = false;
+					document.getElementById("hanList").innerHTML = '';
+				}else{
+					flag = true;
+					document.getElementById("hanList").innerHTML = '<li><a href="index.html" target="_top">TOP</a></li><li><a href="katennzilist.html" target="_top">科展示一覧</a></li><li><a href="mogitenlist.html" target="_top">模擬店一覧</a></li><li><a href="map.html" target="_top">MAP</a></li><li><a href="schedule.html" target="_top">イベントスケジュール</a></li>';
+				}
+				
+			}
+			
+		</script>
+	</head>
+	<body onload="load()">
+		
+		<style type="text/css">
+			#word{
+				width: auto;
+				text-align: center;
+				font-size: 30px;
+			}
+			
+			#hanb{
+                float: right;
+            }
+		</style>
+		
+		<div data-role="page" data-add-back-btn="true">
+			<div data-role="header">
+				<img src="../img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
+                <ul id="hanList"></ul>
+			</div>
+			<div data-role="content">
+				<p id="word">WEBデザイナー科 科展示<br>
+				デザイン&コミュニケーション Webの森<br>
+				Webデザイナー科ではシールやレターセットを自分で作って持ち帰れます！<br>
+				作品展示のほか昨年大好評だった学生自作のシールやグッズも配布！<br>
+				ぜひお気軽にお立ち寄りください！</p>
+			</div>
+			<div data-role="footer">
+				
+			</div>
+		</div>
+		
+
+	</body>
+</html>

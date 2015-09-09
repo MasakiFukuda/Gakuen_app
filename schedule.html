@@ -2,19 +2,35 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>イベントスケジュール</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        
         <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     </head>
     <body>
        
-       <iframe src="header.html" width="auto" height="250px" frameborder="0"></iframe>
+
        
-       <div id="sche">
-           <h1>スケジュール実装予定ページ</h1>
-           <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=DAY&amp;dates=20150908/20150908&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tera-house.ac.jp_9ua26i5sfqqdrn3gltiol7sqi4%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-       </div>
+      
        
-       <iframe src="footer.html" frameborder="0" width="1000px"></iframe>
+       <div data-role="page" data-add-back-btn="true">
+           <div data-role="header">
+               <img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
+                <ul id="hanList"></ul>
+           </div>
+           <div data-role="content">
+                <div id="sche">
+                    <h1>スケジュール実装予定ページ</h1>
+                    <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=DAY&amp;dates=20150908/20150908&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tera-house.ac.jp_9ua26i5sfqqdrn3gltiol7sqi4%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+           </div>
+           <div data-role="footer">
+               
+           </div>
        
        <style type="text/css">
            #sche{
