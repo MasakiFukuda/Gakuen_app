@@ -2,14 +2,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>模擬店紹介</title>
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
         <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
         
-        <title>模擬店紹介</title>
     </head>
     <body>
-        
         <style type="text/css">
             a{
                 font-size: 35px;
@@ -23,20 +23,19 @@
             }
             #title1{
                 font-size: large;
+                
             }
+           
         </style>
         
-        
-        <iframe src="header.html" width="auto" height="250px" frameborder="0"></iframe>
-        
         <div data-role="page" data-add-back-btn="true">
-            <div data-role="header">
-                <img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
-                <h1>学園祭案内アプリ</h1>
+            <div data-role="header" data-position="fixed">
+				<img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
+                <h1 >学園祭案内アプリ</h1>
                 <ul id="hanList"></ul>
-            </div>
+			</div>
             <div data-role="content">
-                <ul id="list1">
+              <ul id="list1">
                     <h1 id="title1">模擬店のリスト</h1>
                     <li><a href="mogiten/mogiten1.html">ふらいどぽてと</a></li>
                     <li><a href="mogiten/mogiten2.html">たこやき</a></li>
@@ -47,11 +46,17 @@
                     <li><a href="mogiten/mogiten7.html">とん☆とん豚汁</a></li>
                 </ul>
             </div>
-            <div data-role="header">
-                
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="forward" data-iconpos="left">戻る</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="left">TOP</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
+                
         
+
     </body>
 </html>

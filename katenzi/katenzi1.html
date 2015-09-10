@@ -41,7 +41,7 @@
 		</style>
 		
 		<div data-role="page" data-add-back-btn="true">
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 				<img src="../img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
                 <h1 >学園祭案内アプリ</h1>
                 <ul id="hanList"></ul>
@@ -52,9 +52,14 @@
 				二年生は今日のごはん診断やフラッシュ暗算など、7つのコンテンツを用意しています。<br>
 				一年生は東中野近辺にあるお店をまとめたホームページを用意しています。</p>
 			</div>
-			<div data-role="footer">
-				
-			</div>
+			<div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#" data-icon="forward" data-iconpos="left">戻る</a></li>
+                        <li><a href="index.html" data-icon="home" data-iconpos="left">TOP</a></li>
+                    </ul>
+                </div>
+            </div>
 		</div>
 		
 
