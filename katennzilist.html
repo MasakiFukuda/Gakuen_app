@@ -6,20 +6,7 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
         <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-        
-        <script>
-			var flag = false;
-			function push(){
-				if(flag){
-					flag = false;
-					document.getElementById("hanList").innerHTML = '';
-				}else{
-					flag = true;
-					document.getElementById("hanList").innerHTML = '<li><a href="index.html" target="_top">TOP</a></li><li><a href="katennzilist.html" target="_top">科展示一覧</a></li><li><a href="mogitenlist.html" target="_top">模擬店一覧</a></li><li><a href="map.html" target="_top">MAP</a></li><li><a href="schedule.html" target="_top">イベントスケジュール</a></li>';
-				}
-				
-			}
-		</script>
+
         
     </head>
     <body>
@@ -36,14 +23,24 @@
             }
             #title1{
                 font-size: large;
+                
             }
+           
         </style>
         
         <div data-role="page" data-add-back-btn="true">
             <div data-role="header">
-                <img src="img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
-                <h1 >学園祭案内アプリ</h1>
-                <ul id="hanList"></ul>
+                <div data-role="collapsible" id="links" data-iconpos="right">
+                    <h1 >学園祭案内アプリ</h1>
+                    
+                    <ul>
+                        <li><a href="index.html" target="_top">TOP</a></li>
+                        <li><a href="katennzilist.html" target="_top">科展示一覧</a></li>
+                        <li><a href="mogitenlist.html" target="_top">模擬店一覧</a></li>
+                        <li><a href="map.html" target="_top">MAP</a></li><li><a href="schedule.html" target="_top">イベントスケジュール</a></li>  
+                    </ul>
+                    
+                </div>
             </div>
             <div data-role="content">
                  <ul id="list1">
