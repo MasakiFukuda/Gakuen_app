@@ -10,9 +10,7 @@
         <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
-		<script>
-			
-		</script>
+		
 	</head>
 	<body onload="load()">
 		<style type="text/css">
@@ -25,9 +23,16 @@
 		
 		<div data-role="page">
 			<div data-role="header" data-position="fixed">
-				<img src="../img/hamburger.png" onclick="push()" width="20%" height="20%" id="hanb">
-                <h1 >学園祭案内アプリ</h1>
-                <ul id="hanList"></ul>
+				<div data-role="collapsible" id="links">
+                    <h1 style="text-align:right">メニュー</h1>
+                    <ul>
+                        <li><a href="index.html" target="_top">TOP</a></li>
+                        <li><a href="katennzilist.html" target="_top">科展示一覧</a></li>
+                        <li><a href="mogitenlist.html" target="_top">模擬店一覧</a></li>
+                        <li><a href="map.html" target="_top">MAP</a></li><li><a href="schedule.html" target="_top">イベントスケジュール</a></li>  
+                    </ul>
+                    
+                </div>
 			</div>
 			<div data-role="content">
 				<p id="word">環境テクノロジー科模擬店<br>
