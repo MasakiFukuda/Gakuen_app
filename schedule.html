@@ -22,7 +22,7 @@
     	function scLoad(){
     		var date=new Date();
     		var hours=date.getHours();
-    		var now="#t"+hours;
+    		var now="#t"+(hours-1);
      		 var n = window.location.href.slice(window.location.href.indexOf('?') + 4);
   		 var p = $(now).offset().top;
  		 $('html,body').animate({ scrollTop: p }, 'slow');
@@ -48,132 +48,138 @@
            <div data-role="content">
                 
                 <h1>スケジュール実装予定ページ</h1>
-               <table border>
+               <table border style="width:100%;">
                
                     <tr id="t1" align="center">
-                        <th>1-1<br><br><br><br><br><br></th>
+                        <th><br>01:00<br><br></th>
                         <td>1-2</td>
                     </tr>
                 
                     <tr id="t2" align="center">
-                        <th>2-1<br><br><br><br><br><br></th>
+                        <th><br>02:00<br><br></th>
                         <td>2-2</td>
                     </tr>
                     <tr id="t3" align="center">
-                        <th>3-1<br> <br><br><br><br><br></th>
+                        <th><br>03:00<br><br></th>
                         <td>3-2</td>
                     </tr>
                     <tr  id="t4" align="center">
-                        <th>4-1<br><br><br><br><br><br></th>
+                        <th><br>04:00<br><br></th>
                         <td>4-2</td>
                     </tr>
                  
                     <tr id="t5" align="center">
-                        <th>5-1<br><br><br><br><br><br></th>
+                        <th><br>05:00<br><br></th>
                         <td>5-2</td>
                     </tr>
                     <tr id="t6" align="center">
-                        <th>6-1<br><br><br><br><br><br></th>
+                        <th><br>06:00<br><br></th>
                         <td>6-2</td>
                     </tr>
                   
                     <tr id="t7" align="center">
-                        <th>7-1<br><br><br><br><br><br></th>
+                        <th><br>07:00<br><br></th>
                         <td>7-2</td>
                     </tr>
                   
                     <tr id="t8" align="center">
-                        <th>8-1<br><br><br><br><br><br></th>
+                        <th><br>08:00<br><br></th>
                         <td>8-2</td>
                     </tr>
                  
                     <tr id="t9" align="center">
-                        <th>9-1<br><br><br><br><br><br></th>
+                        <th><br>09:00<br><br></th>
                         <td>9-2</td>
                     </tr>
       
                     <tr id="t10" align="center">
-                        <th>10-1<br><br><br><br><br><br></th>
+                        <th><br>10:00<br><br></th>
                         <td>10-2</td>
                     </tr>
                 
                     <tr id="t11" align="center">
-                        <th>11-1<br><br><br><br><br><br></th>
-                        <td>11-2<br><br><br><br><br><br></td>
+                        <th><br>11:00<br><br></th>
+                        <td>11-2</td>
                     </tr>
             
                     <tr id="t12" align="center">
-                        <th>12-1<br><br><br><br><br><br></th>
+                        <th><br>12:00<br><br></th>
                         <td>12-2</td>
                     </tr>
                
                     <tr id="t13" align="center">
-                        <th>13-1<br><br><br><br><br><br></th>
+                        <th><br>13:00<br><br></th>
                         <td>13-2</td>
                     </tr>
       
                     <tr id="t14" align="center">
-                        <th>14-1<br><br><br><br><br><br></th>
+                        <th><br>14:00<br><br></th>
                         <td>14-2</td>
                     </tr>
                     
               
                     <tr id="t15" align="center">
-                        <th>15-1<br><br><br><br><br><br></th>
+                        <th><br>15:00<br><br></th>
                         <td>15-2</td>
                     </tr>
                   
                     <tr id="t16" align="center">
-                        <th>16-1<br><br><br><br><br><br></th>
+                        <th><br>16:00<br><br></th>
                         <td>16-2</td>
                     </tr>
               
                     <tr id="t17" align="center">
-                        <th>17-1<br><br><br><br><br><br></th>
+                        <th><br>17:00<br><br></th>
                         <td>17-2</td>
                     </tr>
                   
              
                     <tr id="t18" align="center">
-                        <th>18-1<br><br><br><br><br><br></th>
+                        <th><br>18:00<br><br></th>
                         <td>18-2</td>
                     </tr>
                   
                   
                     <tr id="t19" align="center">
-                        <th>19-1<br><br><br><br><br><br></th>
+                        <th><br>19:00<br><br></th>
                         <td>19-2</td>
                     </tr>
         
                    
                  
                     <tr id="t20" align="center">
-                        <th>20-1<br><br><br><br><br><br></th>
+                        <th><br>20:00<br><br></th>
                         <td>20-2</td>
                     </tr>
                    
                   
                     <tr id="t21" align="center">
-                        <th>21-1<br><br><br><br><br><br></th>
+                        <th><br>21:00<br><br></th>
                         <td>21-2</td>
                     </tr>
                     
                     <tr id="t22" align="center">
-                        <th>22-1<br><br><br><br><br><br></th>
+                        <th><br>22:00<br><br></th>
                         <td>22-2</td>
                     </tr>
                    
                     <tr id="t23" align="center">
-                        <th>23-1<br> <br><br><br><br><br></th>
+                        <th><br>23:00<br><br></th>
                         <td>23-2</td>
                     </tr>
                   
                     <tr id="t0" align="center">
-                        <th>24-1<br><br><br><br><br><br></th>
+                        <th><br>24:00<br><br></th>
                         <td>24-2</td>
                     </tr>
                 </table>
 		<br>
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+        <br>
 		<br>
 		<br>
                
