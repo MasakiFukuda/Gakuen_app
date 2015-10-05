@@ -18,7 +18,7 @@
         <div data-role="page">
            <div data-role="header">
                 <a href="#linksP" data-role="button">menu</a>
-                <p style="text-align:center;margin:4%;">学園祭案内アプリ</p>
+                <p style="text-align:center;margin:4%;">模擬店マップ</p>
            </div>
             
            <div data-role="panel" id="linksP" data-position="left" data-position-fixed="true" data-display="overlay">
@@ -38,61 +38,13 @@
            <div data-role="content">
                <div id="map" style="text-align: center;width: auto;">
 
-                    <h3>模擬店マップ</h3>
                     <img src="Maps/mapImg/road.JPG" style="float: left;">
-                    <a href="Maps/OutAreaA.html" style="display: block;font-weight: normal;font-family: cursive;Comic Sans MS;font-size: 40px;text-decoration: none;
-      									text-align: center;padding: 10px;background: #ddd;
-      									color: #6073FF;
-     									 background: -webkit-gradient(
-        								linear, left top, left bottom, 
-								        from(#d3eefb),
-								        to(#d3eefb));
-								     	border-radius: 30px;
-								     	border: 3px solid #ffffff;
-								     	text-shadow:
-								        0px 0px 0px rgba(0,0,0,0);
-								    	box-shadow:
-								        0px 1px 4px rgba(0,0,0,0.3);
-								        width: 60%;
-										height: 80px;
-										float: right;">
-					Aエリア</a>
-					<a href="Maps/OutAreaB.html" style="display: block;font-weight: normal;font-family: cursive;font-size: 40px;text-decoration: none;
-      									text-align: center;padding: 10px;background: #ddd;
-      									color: #6073FF;
-     									 background: -webkit-gradient(
-        								linear, left top, left bottom, 
-								        from(#fac695),
-								        to(#fac695));
-								     	border-radius: 30px;
-								     	border: 3px solid #ffffff;
-								     	text-shadow:
-								        0px 0px 0px rgba(0,0,0,0);
-								    	box-shadow:
-								        0px 1px 4px rgba(0,0,0,0.3);
-								        width: 60%;
-										height: 80px;
-										float: right;">
-					Bエリア</a>
-					<a href="Maps/OutAreaC.html" style="display: block;font-weight: normal;font-family: cursive;font-size: 40px;text-decoration: none;
-      									text-align: light;padding: 10px;background: #ddd;
-      									color: #6073FF;
-     									 background: -webkit-gradient(
-        								linear, left top, left bottom, 
-								        from(#d2ff52),
-								        to(#d2ff52));
-								     	border-radius: 30px;
-								     	border: 3px solid #ffffff;
-								     	text-shadow:
-								        0px 0px 0px rgba(0,0,0,0);
-								    	box-shadow:
-								        0px 1px 4px rgba(0,0,0,0.3);
-								        width: 60%;
-										height: 80px;
-										float: right;">
-					Cエリア</a>
-                   <br>
-                    <br>
+                    <ul data-role="listview" data-inset="true">
+						  <li data-icon="false"><a href="Maps/OutAreaA.html" style="background: #fac695;width: 60%;height: 80px;vertical-align: middle;"><p style="font-size: 40px;color: #6073FF;text-shadow:3px 3px 2px #0000ff;">Aエリア</p></a></li>
+						  <li data-icon="false"><a href="Maps/OutAreaB.html" style="background: #d3eefb;width: 60%;height: 80px;vertical-align: middle;"><p style="font-size: 40px;color: #6073FF;text-shadow:3px 3px 2px #0000ff;">Bエリア</p></a></li>
+						  <li data-icon="false"><a href="Maps/OutAreaC.html" style="background: #d2ff52;width: 60%;height: 80px;vertical-align: middle;"><p style="font-size: 40px;color: #6073FF;text-shadow:3px 3px 2px #0000ff;">Cエリア</p></a></li>
+						</ul>
+                                       <br>
                     <div data-role="navbar">
                     	<ul>
                     		<li><a href="#" class="ui-state-persist">校外</a></li>
