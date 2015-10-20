@@ -23,15 +23,12 @@
     		var date=new Date();
     		var hours=date.getHours();
     		var day=date.getDay();
-    		if(day%2==1){ 
-    			location.href = "2daysuke.html";
-    		}
-    		if(day%2==0){
+    		
     		var now="#t"+(hours-1);
      		 var n = window.location.href.slice(window.location.href.indexOf('?') + 4);
   		 var p = $(now).offset().top;
  		 $('html,body').animate({ scrollTop: p }, 'slow');
-   		return false;}
+   		return false;
 		
     	}
     	
@@ -48,7 +45,7 @@
                     <li data-icon="home"><a href="index.html" target="_top">TOP</a></li>
                     <li data-icon="info"><a href="katennzilist.html" target="_top">科展示一覧</a></li>
                     <li data-icon="info"><a href="mogitenlist.html" target="_top">模擬店一覧</a></li>
-                    <li data-icon="grid"><a href="OutMap.html" target="_top">MAP</a></li>
+                    <li data-icon="grid"><a href="map.html" target="_top">MAP</a></li>
                     <li data-icon="check"><a href="schedule.html" target="_top" data-ajax="false">イベントスケジュール</a></li>
                     <li data-icon="delete"><a href="#" data-rel="close">メニューを閉じる</a></li>  
                 </ul>
@@ -101,8 +98,8 @@
                 </table>
                 <div data-role="navbar">
                     	<ul>
-                    		<li><a href="#" class="ui-state-persist">1日目</a></li>
-                    		<li><a href="2daysuke.html">２日目</a></li>
+                    		<li><a href="schedule.html">1日目</a></li>
+                    		<li><a href="#" class="ui-state-persist">２日目</a></li>
                     	</ul>
                   </div>
 		
