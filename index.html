@@ -19,7 +19,7 @@
     <body>
         
         <div data-role="page">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed" data-tap-toggle="false">
                 <a href="#linksP" data-role="button">menu</a>
                 <p style="text-align:center;margin:4%;">学園祭案内アプリ</p>
             </div>
@@ -43,10 +43,17 @@
                 
                 
                 <div id="toppos">
-                     <h1 id="title1">東京テクニカルカレッジ</h1>
+                     <h3 id="title1">東京テクニカルカレッジ</h3>
                </div>
                 
-        
+      
+                <a href="katennzilist.html" class="ui-btn">科展示紹介</a>
+                <a href="mogitenlist.html" class="ui-btn">模擬店紹介</a>
+                <a href="OutMap.html" class="ui-btn">マップ</a>
+                <a href="schedule.html" class="ui-btn" data-ajax="false">イベントスケジュール</a>
+                <a href="#helpPopup" class="ui-btn" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop">このサイトについて</a>   
+                
+
                 <div data-role="popup" id="helpPopup" data-overlay-theme="b" data-theme="a" data-shadow="false">
                     <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">close</a>
                     <h3>このサイトについて</h3>
@@ -56,15 +63,6 @@
                         情報処理科の科展示では本サイトの他に診断サイト・各種ゲーム・東中野周辺の紹介サイトを展示しているので、そちらもよろしくお願いします。
                     </p>
                 </div>
-        
-        
-                <a href="katennzilist.html" class="ui-btn">科展示紹介</a>
-                <a href="mogitenlist.html" class="ui-btn">模擬店紹介</a>
-                <a href="OutMap.html" class="ui-btn">マップ</a>
-                <a href="schedule.html" class="ui-btn" data-ajax="false">イベントスケジュール</a>
-                <a href="#helpPopup" class="ui-btn" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop">このサイトについて</a>   
-                
-
                 
                 
             </div>
