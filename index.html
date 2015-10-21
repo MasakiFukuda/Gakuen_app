@@ -13,15 +13,7 @@
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
-        <script>
-            window.onload = function(){
-                var param = location.search.substr(1);
-                console.log(param);
-                if(param == 'flag=true'){
-                    document.getElementById('popBut').click();
-                }
-            }
-        </script>
+        
         
     </head>
     <body>
@@ -54,7 +46,6 @@
                      <h1 id="title1">東京テクニカルカレッジ</h1>
                </div>
                 
-                <a href="#helpPopup" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop"></a>   
         
                 <div data-role="popup" id="helpPopup" data-overlay-theme="b" data-theme="a" data-shadow="false">
                     <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">close</a>
@@ -71,6 +62,8 @@
                 <a href="mogitenlist.html" class="ui-btn">模擬店紹介</a>
                 <a href="OutMap.html" class="ui-btn">マップ</a>
                 <a href="schedule.html" class="ui-btn" data-ajax="false">イベントスケジュール</a>
+                <a href="#helpPopup" class="ui-btn" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop">このサイトについて</a>   
+                
 
                 
                 
