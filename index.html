@@ -13,6 +13,15 @@
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         
+        <script>
+            window.onload = function(){
+                var param = location.search.substr(1);
+                console.log(param);
+                if(param == 'flag=true'){
+                    document.getElementById('popBut').click();
+                }
+            }
+        </script>
         
     </head>
     <body>
@@ -41,19 +50,30 @@
                 
                 
                 
-        
-                <h1 id="title1">東京テクニカルカレッジ</h1>
+                <div id="toppos">
+                     <h1 id="title1">東京テクニカルカレッジ</h1>
+               </div>
                 
+                <a href="#helpPopup" data-rel="popup" id="popBut" data-position-to="#toppos"></a>   
         
+                <div data-role="popup" id="helpPopup" data-overlay-theme="b" data-theme="a" data-shadow="false">
+                    <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">close</a>
+                    <h3>このサイトについて</h3>
+                    <p>
+                        このサイトは情報処理科の二年生が科展示として作成した学園祭の案内アプリです。<br><br>
+                        学園祭で行うイベントのスケジュールや各科で行っている科展示の情報、各クラスの模擬店の情報が閲覧できるようになっています<br><br>
+                        情報処理科の科展示では本サイトの他に診断サイト・各種ゲーム・東中野周辺の紹介サイトを展示しているので、そちらもよろしくお願いします。
+                    </p>
+                </div>
         
         
                 <a href="katennzilist.html" class="ui-btn">科展示紹介</a>
                 <a href="mogitenlist.html" class="ui-btn">模擬店紹介</a>
                 <a href="OutMap.html" class="ui-btn">マップ</a>
                 <a href="schedule.html" class="ui-btn" data-ajax="false">イベントスケジュール</a>
-                <a href="siteHelp.html" class="ui-btn">このサイトについて</a>
 
-        
+                
+                
             </div>
             <div data-role="footer" data-position="fixed" data-tap-toggle="false">
                 <div data-role="navbar">
