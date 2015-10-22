@@ -1,9 +1,0 @@
-<script>
-            window.onload = function(){
-                var param = location.search.substr(1);
-                console.log(param);
-                if(param == 'flag=true'){
-                    document.getElementById('popBut').click();
-                }
-            }
-        </script>
