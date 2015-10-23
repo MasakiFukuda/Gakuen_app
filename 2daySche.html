@@ -6,95 +6,95 @@
         <meta http-equiv="Pragma" content="no-store">
         <meta http-equiv="Cache-Control" content="no-store">
         <meta http-equiv="Expires" content="0">
-        
+
 
         <link rel="stylesheet" href="CSS/indexCss.css">
-        
+
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        
-       
+
+
     </head>
-   
+
      <body onload="scLoad();">
       <script>
     	function scLoad(){
     		var date=new Date();
     		var hours=date.getHours();
     		var day=date.getDay();
-    		
+
     		var now="#t"+(hours-1);
      		 var n = window.location.href.slice(window.location.href.indexOf('?') + 4);
   		 	var p = $(now).offset().top;
  		 	$('html,body').animate({ scrollTop: p }, 'slow');
    			return false;
-		
+
     	}
-    	
+
    </script>
        <div data-role="page">
            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <a href="#linksP" data-role="button">menu</a>
                 <p style="text-align:center;margin:4%;">25日(日)</p>
            </div>
-            
+
            <div data-role="panel" id="linksP" data-position="left" data-position-fixed="true" data-display="overlay" data-theme="b">
-                  
+
                 <ul data-role="listview">
                     <li data-icon="home"><a href="index.html" style="padding-top:5%;padding-bottom:5%;">TOP</a></li>
                     <li data-icon="info"><a href="katennzilist.html" style="padding-top:5%;padding-bottom:5%;">科展示一覧</a></li>
                     <li data-icon="info"><a href="mogitenlist.html" style="padding-top:5%;padding-bottom:5%;">模擬店一覧</a></li>
                     <li data-icon="grid"><a href="OutMap.html" style="padding-top:5%;padding-bottom:5%;">MAP</a></li>
                     <li data-icon="check"><a  href="#" data-rel="close" data-ajax="false" style="padding-top:5%;padding-bottom:5%;">イベントスケジュール</a></li>
-                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>  
+                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>
                 </ul>
-                
-                
+
+
             </div>
-            
+
            <div data-role="content">
-                
+
                <table border style="width:100%;">
-               
-                    
+
+
                     <tr id="t10" align="center">
                         <th><br>10:00<br><br></th>
                         <td>イベントなし</td>
                     </tr>
-                
+
                     <tr id="t11" align="center">
                         <th><br>11:00<br><br></th>
                         <td>11:00～11:40<br><a href="#popSc2_1" data-rel="popup" data-position-to="window" data-transition="pop">女装コンテスト</a></td>
                     </tr>
-            
+
                     <tr id="t12" align="center">
                         <th><br>12:00<br><br></th>
                         <td rowspan="2">12:00～14:00<br><a href="#popSc2_2" data-rel="popup" data-position-to="window" data-transition="pop">ハープ&サックス</a></td>
                     </tr>
-               
+
                     <tr id="t13" align="center">
                         <th><br>13:00<br><br></th>
-                        
+
                     </tr>
-      
+
                     <tr id="t14" align="center">
                         <th><br>14:00<br><br></th>
                         <td>14:00～14:45<br><a href="#popSc2_3" data-rel="popup" data-position-to="window" data-transition="pop">箱 in 当てクイズ</a></td>
                     </tr>
-                    
-              
+
+
                     <tr id="t15" align="center">
                         <th><br>15:00<br><br></th>
                         <td>15:00～16:00<br><a href="#popSc2_4" data-rel="popup" data-position-to="window" data-transition="pop">ミニライブ</a></td>
                     </tr>
-                  
+
                     <tr id="t16" align="center">
                         <th><br>16:00<br><br></th>
                         <td>イベントなし</td>
                     </tr>
-              	
-                    
+
+
                 </table>
                 <div data-role="navbar">
                     	<ul>
@@ -102,36 +102,71 @@
                     		<li><a href="#" class="ui-state-persist">25日(日)</a></li>
                     	</ul>
                   </div>
-		          
+
                   <!--
                       詳細ゾーン
                    -->
-                   
                    <div data-role="popup" id="popSc2_1" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
-                       <p>女装コンテスト</p>
+                       <h2 style="text-align:center">女装コンテスト</h2>
+                       <br>
+                       <h3 style="text-align:center">イベントの内容</h3>
+                       <p>男性が女性の服装やカツラを纏い、誰が一番可愛いかを決めるイベントです!</p>
+                       <br>
+                       <h3 style="text-align:center">みどころ</h3>
+                       <p>見所はどれだけ女子になりきれてるか、仕草や動きなどにも注目してもらいたいです。</p>
+                       <br>
+                       <h3 style="text-align:center">イベント担当よりひとこと</h3>
+                        <p>今年の出場者には可愛い方が多く出てるのでアピールポーズは期待して見てもらえると嬉しいです！</p>
+                       <br>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc2_2" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
-                       <p>ハープ&サックス</p>
+                       <h2 style="text-align:center">ハープ＆サックス</h2>
+                       <br>
+                       <h3 style="text-align:center">イベントの内容</h3>
+                       <p>ハープ演奏</p>
+                       <p>LCクレア アイリッシュハープアンサンブル</p>
+                       <p>サックス演奏</p>
+                       <p>MIWAKO＆Fantastic Earthサックス、フルートアンサンブル</p>
+                       <br>
+                       <h3 style="text-align:center">みどころ</h3>
+                       <p>ハープ演奏</p>
+                       <p>渡辺真位の主催する「クレア音楽企画でハープを学んでいるアンサンブルメンバーです。</p>
+                       <p>サックス演奏</p>
+                       <p>Sax, Flute奏者のmiwakoを中心としたSax, Flute好きが集まった老若男女問わず仲の良い団体です。</p>
+                       <br>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc2_3" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
-                       <h2>箱 in 当てクイズ</h2>
-                       <p>箱の中身を二人一組のチームで当てるゲームです！<br>
-                            チームVSチームの対戦形式で早く箱の中身を当てた方が勝利！<br>
-                            勝ったチームには箱の中身が貰えます！<br>負けてもお菓子がもらえるよ<br><br>
-                            更に中身を当てたタイムが一番早いチームには豪華賞品を2つプレゼント！<br>
-                            飛び入り参加も可能なので、お暇でしたら是非！</p>
+                       <h2 style="text-align:center">箱 in 当てクイズ</h2>
+                       <h3 style="text-align:center">イベントの内容</h3>
+                        <p>箱の中身を二人一組のチームで当てるゲームです！チームVSチームの対戦形式で早く箱の中身を当てた方が勝利！</p>
+                       <br>
+                       <h3 style="text-align:center">みどころ</h3>
+                       <p>勝ったチームには箱の中身が貰えます！</p>
+                       <p>負けてもお菓子がもらえるよ</p>
+                       <p>更に中身を当てたタイムが一番早いチームには豪華賞品を2つプレゼント！</p>
+                       <br>
+                       <h3 style="text-align:center">イベント担当よりひとこと</h3>
+                       <p>飛び入り参加も可能なので、お暇でしたら是非！</p>
+                       <br>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc2_4" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
-                       <p>ミニライブ</p>
+                       <h2 style="text-align:center">ミニライブ</h2>
+                       <br>
+                       <h3 style="text-align:center">イベントの内容</h3>
+                       <p>中野ミュージックフェス実行委員会</p>
+                       <br>
+                       <h3 style="text-align:center">イベント担当よりひとこと</h3>
+                       <p>「中野の街を音楽であふれる街にしたい」「いつでも音楽が鳴っている街にしたい」。</p>
+                       <p>そのために今回は東京テクニカルカレッジさんをお借りします！</p>
+                       <br>
                    </div>
-               
            </div>
            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <div data-role="navbar">
