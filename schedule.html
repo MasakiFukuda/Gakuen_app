@@ -6,24 +6,24 @@
         <meta http-equiv="Pragma" content="no-store">
         <meta http-equiv="Cache-Control" content="no-store">
         <meta http-equiv="Expires" content="0">
-        
+
 
         <link rel="stylesheet" href="CSS/indexCss.css">
-        
+
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        
-       
+
+
     </head>
-   
+
      <body onload="scLoad();">
       <script>
     	function scLoad(){
     		var date=new Date();
     		var hours=date.getHours();
     		var day=date.getDay();
-    		if(day%2==1){ 
+    		if(day%2==1){
     			location.href = "2daySche.html";
     		}
     		if(day%2==0){
@@ -32,72 +32,72 @@
    			 $('html,body').animate({ scrollTop: p }, 'slow');
    			 return false;
    			 }
-		
+
     	}
-    	
+
    </script>
        <div data-role="page">
            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <a href="#linksP" data-role="button">menu</a>
                 <p style="text-align:center;margin:4%;">スケジュールページ</p>
            </div>
-            
+
            <div data-role="panel" id="linksP" data-position="left" data-position-fixed="true" data-display="overlay" data-theme="b">
-                  
+
                 <ul data-role="listview">
                     <li data-icon="home"><a href="index.html" target="_top" style="padding-top:5%;padding-bottom:5%;">TOP</a></li>
                     <li data-icon="info"><a href="katennzilist.html" target="_top" style="padding-top:5%;padding-bottom:5%;">科展示一覧</a></li>
                     <li data-icon="info"><a href="mogitenlist.html" target="_top" style="padding-top:5%;padding-bottom:5%;">模擬店一覧</a></li>
                     <li data-icon="grid"><a href="OutMap.html" target="_top" style="padding-top:5%;padding-bottom:5%;">MAP</a></li>
                     <li data-icon="check"><a href="schedule.html" target="_top" data-ajax="false" style="padding-top:5%;padding-bottom:5%;">イベントスケジュール</a></li>
-                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>  
+                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>
                 </ul>
-                
-                
+
+
             </div>
-            
+
            <div data-role="content">
-                
+
                <table border style="width:100%;">
-               
-                    
+
+
                     <tr id="t10" align="center">
                         <th><br>10:00<br><br></th>
                         <td>10:00～10:15<br><a href="#popSc1_1" data-rel="popup" data-position-to="window" data-transition="pop">開会式</a></td>
                     </tr>
-                
+
                     <tr id="t11" align="center">
                         <th><br>11:00<br><br></th>
                         <td>11:00～11:40<br><a href="#popSc1_2" data-rel="popup" data-position-to="window" data-transition="pop">筋肉フェスティバル</a></td>
                     </tr>
-            
+
                     <tr id="t12" align="center">
                         <th><br>12:00<br><br></th>
                         <td>12:00～13:00<br><a href="#popSc1_3" data-rel="popup" data-position-to="window" data-transition="pop">パントマイム</a></td>
                     </tr>
-               
+
                     <tr id="t13" align="center">
                         <th><br>13:00<br><br></th>
                         <td>13:00～14:15<br><a href="#popSc1_4" data-rel="popup" data-position-to="window" data-transition="pop">有志バンド</a></td>
                     </tr>
-      
+
                     <tr id="t14" align="center">
                         <th><br>14:00<br><br></th>
                         <td>14:15～14:45<br><a href="#popSc1_5" data-rel="popup" data-position-to="window" data-transition="pop">つかめ！つみあげて！</a></td>
                     </tr>
-                    
-              
+
+
                     <tr id="t15" align="center">
                         <th><br>15:00<br><br></th>
                         <td>15:00～16:00<br><a href="#popSc1_6" data-rel="popup" data-position-to="window" data-transition="pop">BINGO</a></td>
                     </tr>
-                  
+
                     <tr id="t16" align="center">
                         <th><br>16:00<br><br></th>
                         <td>イベントなし</td>
                     </tr>
-              	
-                    
+
+
                 </table>
                 <div data-role="navbar">
                     	<ul>
@@ -105,43 +105,45 @@
                     		<li><a href="2daySche.html">２日目</a></li>
                     	</ul>
                   </div>
-		          
+
                   <!--
                       詳細ゾーン
                    -->
-                   
+
                    <div data-role="popup" id="popSc1_1" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
-                       <p>詳細1</p>
+                       <p>詳細</p>
+                       <p>イベントの内容</p>
+                       <p>筋肉自慢たちがそれぞれ</p>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc1_2" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
                        <p>詳細2</p>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc1_3" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
                        <p>詳細3</p>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc1_4" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
                        <p>詳細4</p>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc1_5" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
                        <p>詳細5</p>
                    </div>
-                   
+
                    <div data-role="popup" id="popSc1_6" data-overlay-theme="b" data-theme="a" data-shadow="false">
                        <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
                        <p>詳細6</p>
                    </div>
-                   
-                   
-               
+
+
+
            </div>
            <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <div data-role="navbar">
