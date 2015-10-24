@@ -12,45 +12,52 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        
-        
-        
+        <script>
+           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+           ga('create', 'UA-69251283-1', 'auto');
+           ga('send', 'pageview');
+        </script>
+
+
     </head>
     <body>
-        
+
         <div data-role="page">
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <a href="#linksP" data-role="button">menu</a>
                 <p style="text-align:center;margin:4%;">学園祭案内アプリ</p>
             </div>
-            
+
             <div data-role="panel" id="linksP" data-position="left" data-position-fixed="true" data-display="overlay" data-theme="b">
-                  
+
                 <ul data-role="listview">
                     <li data-icon="home"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">TOP</a></li>
                     <li data-icon="info"><a href="katennzilist.html" style="padding-top:5%;padding-bottom:5%;">科展示一覧</a></li>
                     <li data-icon="info"><a href="mogitenlist.html" style="padding-top:5%;padding-bottom:5%;">模擬店一覧</a></li>
                     <li data-icon="grid"><a href="OutMap.html" style="padding-top:5%;padding-bottom:5%;">MAP</a></li>
                     <li data-icon="check"><a href="schedule.html" data-ajax="false" style="padding-top:5%;padding-bottom:5%;">イベントスケジュール</a></li>
-                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>  
+                    <li data-icon="delete"><a href="#" data-rel="close" style="padding-top:5%;padding-bottom:5%;">メニューを閉じる</a></li>
                 </ul>
-                
-                
+
+
             </div>
-            
+
             <div data-role="content">
-                
-                
-                
+
+
+
                 <div id="toppos"></div>
-                
-      
+
+
                 <a href="katennzilist.html" class="ui-btn">科展示紹介</a>
                 <a href="mogitenlist.html" class="ui-btn">模擬店紹介</a>
                 <a href="OutMap.html" class="ui-btn">マップ</a>
                 <a href="schedule.html" class="ui-btn" data-ajax="false">イベントスケジュール</a>
-                <a href="#helpPopup" class="ui-btn" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop">このサイトについて</a>   
-                
+                <a href="#helpPopup" class="ui-btn" data-rel="popup" id="popBut" data-position-to="#toppos"  data-transition="pop">このサイトについて</a>
+
 
                 <div data-role="popup" id="helpPopup" data-overlay-theme="b" data-theme="a" data-shadow="false">
                     <a href="#" data-rel="back" data-role="button" data-icon="delete" data-iconpos="notext" class="ui-btn-right">close</a>
@@ -61,8 +68,8 @@
                         情報処理科の科展示では本サイトの他に診断サイト・各種ゲーム・東中野周辺の紹介サイトを展示しているので、そちらもよろしくお願いします。
                     </p>
                 </div>
-                
-                
+
+
             </div>
             <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
                 <div data-role="navbar">
@@ -72,10 +79,10 @@
                     </ul>
                 </div>
             </div>
-            
+
         </div>
 
-        
+
 
     </body>
 </html>
